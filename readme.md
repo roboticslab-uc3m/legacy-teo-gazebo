@@ -23,4 +23,4 @@ To start the simulation just enter the following command in the root of your clo
 
 ###TODO:
 - [ ] Fix the visual elements of the robot.
-- [ ] Unify robot model (see <http://robots.uc3m.es/index.php/TEO>)
+- [X] Unify robot model (see <http://robots.uc3m.es/index.php/TEO>)
