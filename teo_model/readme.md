@@ -1,15 +1,16 @@
 #teo_model
-The initial design of the model of this robot has been done in a urdf.xacro format. To run this model in Gazebo the .sdf format is needed, therefore the following conversions were performed.
+This model is generated using the model in [teo-ros-simulation/teo_description/](https://github.com/roboticslab-uc3m/teo-ros-simulation/tree/master/teo_description). To run this model in Gazebo the .sdf format is needed, therefore the following conversions were performed:
 
+XACRO
+=====
 
- **urdf.xacro -> urdf**
+- Convert xacro file into an urdf:     $ rosrun xacro xacro.py teo_humanoid.urdf.xacro > teo_humanoid.urdf
+-
 
-```
-	rosrun xacro xacro.py -o teo.urdf teo_humanoid.urdf.xacro
-```
+URDF
+====
 
-**urdf -> sdf**
+- Check URDF:   $ check_urdf teo_humanoid.urdf
+- Visualize URDF:   $ urdf_to_graphiz teo_humanoid.urdf && evince teo.pdf
+- URDF -> SDF:   $ gzsdf print teo_humanoid.urdf > teo_humanoid.sdf
 
-```
-	gzsdf print teo.urdf > teo.sdf
-```

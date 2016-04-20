@@ -20,7 +20,4 @@ To start the simulation just enter the following command in the root of your clo
 ###NOTES:
 - This repository is intended to be a gazebo stand-alone repository. For this reasons all the additional no-gazebo parts are not implemented. This is the case for example of the **control**. For this reason to avoid the model to continously fall, a **fictional joint between the robot waist and the world** have been generated in the simulation, to fix the robot to the environment. This joint is called **"base_joint"**, and deleting this joint is as easy as commenting it out in the **.sdf file**.
 - This repository uses a modified robot description from the following repository <https://github.com/roboticslab-uc3m/teo_robot> .
-
-###TODO:
-- [ ] Fix the visual elements of the robot.
-- [X] Unify robot model (see <http://robots.uc3m.es/index.php/TEO>)
+:
