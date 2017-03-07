@@ -4,17 +4,15 @@ This repository contains the needed files to run an stand-alone simulation of th
 ##Installation steps
 1. **Clone** this repository in your pc.
 
-```		
-		cd
-		mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
+```				
+		cd; mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
 		git clone https://github.com/roboticslab-uc3m/teo-gazebo
 ```
  
 2. **Copy the teo_model and teo_description** folders in your *local Gazebo model database* (~/.gazebo/models/), for that just go to the root of the directory and enter the following command in a terminal:
 
-```
-		cd
-		cd .gazebo; mkdir -p models
+```	
+		cd; cd .gazebo; mkdir -p models
 		cd; cd repos/teo-gazebo
 		cp -r teo_model teo_meshes ~/.gazebo/models/
 
