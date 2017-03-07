@@ -1,6 +1,12 @@
 #teo-gazebo
 This repository contains the needed files to run an stand-alone simulation of the UC3M humanoid robot teo.
 
+##Dependencies 
+- **Clone** teo-ros-simulation in your pc
+```				
+		cd; mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
+		git clone https://github.com/roboticslab-uc3m/teo-ros-simulation
+```
 ##Installation steps
 1. **Clone** this repository in your pc.
 
@@ -13,8 +19,10 @@ This repository contains the needed files to run an stand-alone simulation of th
 
 ```	
 		cd; cd .gazebo; mkdir -p models
+	        cd; cd repos/teo-ros-simulation
+		cp -r teo_description ~/.gazebo/models/
 		cd; cd repos/teo-gazebo
-		cp -r teo_model teo_meshes ~/.gazebo/models/
+		cp -r teo_model ~/.gazebo/models/
 
 ```
 
