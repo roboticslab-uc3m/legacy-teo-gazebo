@@ -4,13 +4,29 @@ This model is generated using the model in [teo-ros-simulation/teo_description/]
 XACRO
 =====
 
-- Convert xacro file into an urdf:     $ rosrun xacro xacro.py teo_humanoid.urdf.xacro > teo_humanoid.urdf
+- Convert xacro file into an urdf:     
 
+```bash
+rosrun xacro xacro.py teo_humanoid.urdf.xacro > teo_humanoid.urdf
+```
 
 URDF
 ====
 
-- Check URDF:   $ check_urdf teo_humanoid.urdf
-- Visualize URDF:   $ urdf_to_graphiz teo_humanoid.urdf && evince teo.pdf
-- URDF -> SDF:   $ gzsdf print teo_humanoid.urdf > teo_humanoid.sdf
+- Check URDF: 
+```bash
+check_urdf teo_humanoid.urdf
+```
+
+- Visualize URDF:
+```bash
+urdf_to_graphiz teo_humanoid.urdf && evince teo.pdf
+```
+
+- URDF -> SDF:  
+```bash
+
+gzsdf print teo_humanoid.urdf > teo_humanoid.sdf
+```
+
 
