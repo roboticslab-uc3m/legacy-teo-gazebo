@@ -19,11 +19,9 @@ This repository contains the needed files to run an stand-alone simulation of th
 
 ```	
 		cd; cd .gazebo; mkdir -p models
-	        cd; cd repos/teo-gazebo
+        cd; cd repos/teo-gazebo
 		cp -r teo_meshes ~/.gazebo/models/
-		cd; cd repos/teo-gazebo
 		cp -r teo_model ~/.gazebo/models/
-
 ```
 
 ## Starting the simulation
