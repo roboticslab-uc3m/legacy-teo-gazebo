@@ -15,12 +15,12 @@ This repository contains the needed files to run an stand-alone simulation of th
 		git clone https://github.com/roboticslab-uc3m/teo-gazebo
 ```
  
-2. **Copy the teo_model and teo_description** folders in your *local Gazebo model database* (~/.gazebo/models/), from root enter:
+2. **Copy the teo_model and teo_meshes** folders in your *local Gazebo model database* (~/.gazebo/models/), from root enter:
 
 ```	
 		cd; cd .gazebo; mkdir -p models
 	        cd; cd repos/teo-gazebo
-		cp -r teo_description ~/.gazebo/models/
+		cp -r teo_meshes ~/.gazebo/models/
 		cd; cd repos/teo-gazebo
 		cp -r teo_model ~/.gazebo/models/
 
