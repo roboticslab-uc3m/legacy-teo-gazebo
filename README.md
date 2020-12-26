@@ -1,6 +1,6 @@
-# teo-gazebo
+# legacy-teo-gazebo
 
-This repository contains the needed files to run an stand-alone simulation of the UC3M humanoid robot teo.
+This repository contains the needed files to run an stand-alone simulation of the UC3M humanoid robot teo. (legacy code)
 
 ## Dependencies 
 
